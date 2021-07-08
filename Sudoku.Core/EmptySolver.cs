@@ -7,6 +7,7 @@ namespace Sudoku.Core
     {
         public void Solve(Core.GrilleSudoku s)
         {
+
         }
     }
 }

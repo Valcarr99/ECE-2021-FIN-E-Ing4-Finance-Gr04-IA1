@@ -7,9 +7,31 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.Core", "Sudoku.Core\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.Benchmark", "Sudoku.Benchmark\Sudoku.Benchmark.csproj", "{89EB5D0A-79B2-46EC-BEF7-FB6EC14DAB8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku.Probabilistic", "Sudoku.Probabilistic\Sudoku.Probabilistic.csproj", "{B31C8F97-8559-415B-B773-C4BE716B59BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.Probabilistic", "Sudoku.Probabilistic\Sudoku.Probabilistic.csproj", "{B31C8F97-8559-415B-B773-C4BE716B59BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku.DL.OR", "Sudoku.DL.OR\Sudoku.DL.OR.csproj", "{A5920DFB-F119-4E60-AF59-BB7C77407CA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.SolverHumain", "Sudoku.SolverHumain\Sudoku.SolverHumain.csproj", "{1C7C2C2E-A71A-4A41-ADDB-184359AF2835}"
+EndProject
+
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.recursive.backtracking", "Sudoku.recursive.backtracking\Sudoku.recursive.backtracking.csproj", "{62AB0E92-5046-418A-8F33-CCA557174E1A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7A604142-5BE0-4C9F-A61C-86B09D8F83E4} = {7A604142-5BE0-4C9F-A61C-86B09D8F83E4}
+	EndProjectSection
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.DL.OR", "Sudoku.DL.OR\Sudoku.DL.OR.csproj", "{A5920DFB-F119-4E60-AF59-BB7C77407CA5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.DL", "Sudoku.DL\Sudoku.DL.csproj", "{38B36F42-19A7-48A5-B5CA-EA0FC79935C0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.Swarm", "Sudoku.Swarm\Sudoku.Swarm.csproj", "{42926FE8-983F-40C9-8EC8-221A2F1A9759}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku_CNN", "Sudoku_CNN\Sudoku_CNN.csproj", "{3EEBBEBA-E73E-43E7-A4B3-4B28395D0AA0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D0814004-5887-4925-93DC-345BCF1E69DE}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.Z3Solver", "Sudoku.Z3Solver\Sudoku.Z3Solver.csproj", "{853CD18C-D67C-4C07-A0CE-9AD2774D8D5A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.Norvig", "Sudoku.Norvig\Sudoku.Norvig.csproj", "{7457A390-2CED-43CF-BFF7-13C02B5F584E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,14 +47,42 @@ Global
 		{89EB5D0A-79B2-46EC-BEF7-FB6EC14DAB8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89EB5D0A-79B2-46EC-BEF7-FB6EC14DAB8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89EB5D0A-79B2-46EC-BEF7-FB6EC14DAB8B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A5920DFB-F119-4E60-AF59-BB7C77407CA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A5920DFB-F119-4E60-AF59-BB7C77407CA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A5920DFB-F119-4E60-AF59-BB7C77407CA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A5920DFB-F119-4E60-AF59-BB7C77407CA5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B31C8F97-8559-415B-B773-C4BE716B59BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B31C8F97-8559-415B-B773-C4BE716B59BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B31C8F97-8559-415B-B773-C4BE716B59BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B31C8F97-8559-415B-B773-C4BE716B59BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C7C2C2E-A71A-4A41-ADDB-184359AF2835}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C7C2C2E-A71A-4A41-ADDB-184359AF2835}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C7C2C2E-A71A-4A41-ADDB-184359AF2835}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C7C2C2E-A71A-4A41-ADDB-184359AF2835}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5920DFB-F119-4E60-AF59-BB7C77407CA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5920DFB-F119-4E60-AF59-BB7C77407CA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5920DFB-F119-4E60-AF59-BB7C77407CA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5920DFB-F119-4E60-AF59-BB7C77407CA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38B36F42-19A7-48A5-B5CA-EA0FC79935C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38B36F42-19A7-48A5-B5CA-EA0FC79935C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38B36F42-19A7-48A5-B5CA-EA0FC79935C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38B36F42-19A7-48A5-B5CA-EA0FC79935C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42926FE8-983F-40C9-8EC8-221A2F1A9759}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42926FE8-983F-40C9-8EC8-221A2F1A9759}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42926FE8-983F-40C9-8EC8-221A2F1A9759}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42926FE8-983F-40C9-8EC8-221A2F1A9759}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EEBBEBA-E73E-43E7-A4B3-4B28395D0AA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EEBBEBA-E73E-43E7-A4B3-4B28395D0AA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EEBBEBA-E73E-43E7-A4B3-4B28395D0AA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EEBBEBA-E73E-43E7-A4B3-4B28395D0AA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62AB0E92-5046-418A-8F33-CCA557174E1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62AB0E92-5046-418A-8F33-CCA557174E1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62AB0E92-5046-418A-8F33-CCA557174E1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62AB0E92-5046-418A-8F33-CCA557174E1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7457A390-2CED-43CF-BFF7-13C02B5F584E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7457A390-2CED-43CF-BFF7-13C02B5F584E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7457A390-2CED-43CF-BFF7-13C02B5F584E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7457A390-2CED-43CF-BFF7-13C02B5F584E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{853CD18C-D67C-4C07-A0CE-9AD2774D8D5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{853CD18C-D67C-4C07-A0CE-9AD2774D8D5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{853CD18C-D67C-4C07-A0CE-9AD2774D8D5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{853CD18C-D67C-4C07-A0CE-9AD2774D8D5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
